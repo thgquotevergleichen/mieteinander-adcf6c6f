@@ -2,7 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Testimonials } from "@/components/Testimonials";
-import { CallToAction } from "@/components/CallToAction";
+import { ContactSection } from "@/components/ContactSection";
 
 const Index = () => {
   return (
@@ -11,7 +11,7 @@ const Index = () => {
       <BenefitsSection />
       <HowItWorks />
       <Testimonials />
-      <CallToAction />
+      <ContactSection />
     </div>
   );
 };
