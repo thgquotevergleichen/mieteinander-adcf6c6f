@@ -34,7 +34,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-6">
           <GlassCard className="animate-float">
             <h3 className="text-xl font-semibold mb-2">Vertrauen aufbauen</h3>
             <p className="text-secondary/70">Transparente Kommunikation und faire Bedingungen für beide Seiten</p>
