@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden flex items-center justify-center px-4 pt-16">
+    <section className="min-h-screen relative overflow-hidden flex items-center justify-center px-4 pt-28">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
       
       <div className="container mx-auto relative z-10">
