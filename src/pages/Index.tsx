@@ -5,6 +5,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { ContactSection } from "@/components/ContactSection";
 import { NavBar } from "@/components/NavBar";
 import { PlatformSection } from "@/components/PlatformSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <HowItWorks />
       <Testimonials />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
