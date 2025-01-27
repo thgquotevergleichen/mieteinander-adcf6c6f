@@ -1,11 +1,11 @@
-import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-gradient-to-b from-[#F5F5F7] to-white">
+    <footer className="w-full bg-gradient-to-b from-[#F5F5F7] to-white border-t-2 border-gray-100 shadow-inner">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
@@ -16,10 +16,16 @@ export const Footer = () => {
                 info@win-win-haven.de
               </a>
             </div>
+            <div className="flex items-center space-x-2">
+              <Phone className="h-5 w-5 text-gray-600" />
+              <a href="tel:+49123456789" className="text-gray-600 hover:text-gray-900">
+                +49 (0) 123 456789
+              </a>
+            </div>
           </div>
           
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900">Links</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/datenschutz" className="text-gray-600 hover:text-gray-900">
@@ -31,21 +37,26 @@ export const Footer = () => {
                   Impressum
                 </Link>
               </li>
+              <li>
+                <Link to="/agb" className="text-gray-600 hover:text-gray-900">
+                  AGB
+                </Link>
+              </li>
             </ul>
           </div>
           
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900">Social Media</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
+            <h3 className="text-lg font-semibold text-gray-900">Standort</h3>
+            <div className="space-y-2">
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-5 w-5 text-gray-600 mt-1" />
+                <address className="text-gray-600 not-italic">
+                  Win-Win Haven GmbH<br />
+                  Musterstraße 123<br />
+                  12345 Musterstadt<br />
+                  Deutschland
+                </address>
+              </div>
             </div>
           </div>
         </div>
