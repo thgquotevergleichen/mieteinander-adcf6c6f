@@ -51,9 +51,9 @@ export const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-gray-600 mt-1" />
                 <address className="text-gray-600 not-italic">
-                  Win-Win Haven GmbH<br />
-                  Musterstraße 123<br />
-                  12345 Musterstadt<br />
+                  mieteinander GmbH<br />
+                  Schlossplatz 12<br />
+                  18445 Kramerhof<br />
                   Deutschland
                 </address>
               </div>
