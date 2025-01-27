@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -12,14 +12,8 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-900">Kontakt</h3>
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5 text-gray-600" />
-              <a href="mailto:info@win-win-haven.de" className="text-gray-600 hover:text-gray-900">
-                info@win-win-haven.de
-              </a>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Phone className="h-5 w-5 text-gray-600" />
-              <a href="tel:+49123456789" className="text-gray-600 hover:text-gray-900">
-                +49 (0) 123 456789
+              <a href="mailto:kontakt@mieteinander.de" className="text-gray-600 hover:text-gray-900">
+                kontakt@mieteinander.de
               </a>
             </div>
           </div>
@@ -63,7 +57,7 @@ export const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-gray-500">
-            © {currentYear} Win-Win Haven. Alle Rechte vorbehalten.
+            © {currentYear} mieteinander. Alle Rechte vorbehalten.
           </p>
         </div>
       </div>
