@@ -17,11 +17,10 @@ export const HeroSection = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <div className="text-4xl md:text-7xl font-bold text-secondary">
-            <span className="block md:inline">Harmonische</span>{' '}
-            <span className="block md:inline">Mietver-</span>
-            <span className="block md:inline">hältnisse</span>{' '}
-            <span className="block md:inline">schaffen</span>
+          <div className="text-4xl md:text-7xl font-bold text-secondary [hyphens:none] [-webkit-hyphens:none]">
+            <span className="inline-block">Harmonische</span>{' '}
+            <span className="inline-block">Mietverhältnisse</span>{' '}
+            <span className="inline-block">schaffen</span>
           </div>
           
           <AnimatedText delay={200} className="text-lg md:text-2xl text-secondary/80">
