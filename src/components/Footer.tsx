@@ -11,7 +11,7 @@ export const Footer = () => {
           <img 
             src="/lovable-uploads/d0fd6e44-1a60-4d94-ab4a-7b01861ccf9d.png" 
             alt="Mieteinander Logo" 
-            className="h-16"
+            className="h-20" // Increased size from h-16 to h-20
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">

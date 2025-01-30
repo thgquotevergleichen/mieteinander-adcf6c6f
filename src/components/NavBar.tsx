@@ -27,7 +27,7 @@ export const NavBar = () => {
             <img 
               src="/lovable-uploads/d0fd6e44-1a60-4d94-ab4a-7b01861ccf9d.png" 
               alt="Mieteinander Logo" 
-              className="h-12 md:h-16" // Increased size for both mobile and desktop
+              className="h-16 md:h-20" // Increased size even more for both mobile and desktop
             />
           </Link>
 
