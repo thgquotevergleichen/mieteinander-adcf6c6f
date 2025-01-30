@@ -8,8 +8,8 @@ const Hausverwalter = () => {
   const benefits = [
     {
       icon: Building,
-      title: "Digitale Prozesse",
-      description: "Nutzen Sie unsere digitale Plattform für eine effiziente Verwaltung aller Optimierungsprojekte.",
+      title: "Effiziente Kommunikation",
+      description: "Profitieren Sie von einer effizienten Kommunikation mit Ihrem persönlichen Mieteinander-Berater für alle Optimierungsprojekte.",
     },
     {
       icon: Users,
