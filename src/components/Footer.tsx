@@ -7,10 +7,10 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-gradient-to-b from-[#F5F5F7] to-white border-t-2 border-gray-100 shadow-inner">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">Kontakt</h3>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center justify-center md:justify-start space-x-2">
               <Mail className="h-5 w-5 text-gray-600" />
               <a href="mailto:info@mieteinander-wohnen.de" className="text-gray-600 hover:text-gray-900">
                 info@mieteinander-wohnen.de
@@ -42,8 +42,8 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">Standort</h3>
             <div className="space-y-2">
-              <div className="flex items-start space-x-2">
-                <MapPin className="h-5 w-5 text-gray-600 mt-1" />
+              <div className="flex items-center justify-center md:justify-start space-x-2">
+                <MapPin className="h-5 w-5 text-gray-600 flex-shrink-0" />
                 <address className="text-gray-600 not-italic">
                   mieteinander GmbH<br />
                   Schlossplatz 12<br />

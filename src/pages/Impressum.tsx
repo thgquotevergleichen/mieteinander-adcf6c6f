@@ -5,7 +5,7 @@ const Impressum = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <NavBar />
-      <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+      <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl mt-24">
         <h1 className="text-3xl font-bold mb-12">Impressum</h1>
 
         <section className="space-y-8 text-left">
