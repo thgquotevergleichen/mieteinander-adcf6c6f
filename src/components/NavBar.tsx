@@ -10,7 +10,7 @@ import { Menu } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const menuItems = [
-  { path: "/", label: "Start" },
+  { path: "/", label: "Home" },
   { path: "/mieter", label: "Für Mieter" },
   { path: "/vermieter", label: "Für Vermieter" },
   { path: "/hausverwalter", label: "Für Hausverwalter" },

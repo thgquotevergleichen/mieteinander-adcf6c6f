@@ -4,7 +4,6 @@ import { Shield, Users, CheckCircle, HeartHandshake, Clock, MessageCircle } from
 import { GlassCard } from "@/components/ui/GlassCard";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 
-const Mieter = () => {
   const benefits = [
     {
       icon: Shield,
@@ -44,6 +43,7 @@ const Mieter = () => {
     description: "Mit über 10 Jahren Erfahrung im Immobilienbereich und einer Ausbildung in Mediation setzt sich Sarah Weber leidenschaftlich für die Interessen unserer Mieter ein. Sie und ihr Team von qualifizierten Beratern verstehen die Bedürfnisse beider Seiten und schaffen Win-win-Situationen.",
   };
 
+const Mieter = () => {
   return (
     <div className="min-h-screen bg-[#F5F5F7]">
       <NavBar />
@@ -109,22 +109,24 @@ const Mieter = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white to-primary/5">
-        <div className="container mx-auto text-center max-w-3xl">
-          <h2 className="text-3xl font-bold text-primary mb-6">
-            Starten Sie jetzt Ihr entspanntes Mietverhältnis
-          </h2>
-          <p className="text-lg text-secondary mb-8">
-            Kontaktieren Sie uns noch heute und erfahren Sie, wie wir Ihr Mietverhältnis optimieren können.
-          </p>
-          <a 
-            href="mailto:info@mieteinander-wohnen.de"
-            className="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
-          >
-            Kontakt aufnehmen
-          </a>
-        </div>
-      </section>
+
+  {/* CTA Section */}
+  <section className="py-16 px-4 bg-gradient-to-b from-white to-primary/5">
+    <div className="container mx-auto text-center max-w-3xl">
+      <h2 className="text-3xl font-bold text-primary mb-6">
+        Sie haben Fragen?
+      </h2>
+      <p className="text-lg text-secondary mb-8">
+        Kontaktieren Sie uns noch heute und erfahren Sie, wie wir Ihr Mietverhältnis optimieren können.
+      </p>
+      <a 
+        href="mailto:info@mieteinander-wohnen.de"
+        className="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
+      >
+        Kontakt aufnehmen
+      </a>
+    </div>
+  </section>
 
       <Footer />
     </div>
