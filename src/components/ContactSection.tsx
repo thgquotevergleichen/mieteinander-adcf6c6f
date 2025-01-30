@@ -19,8 +19,8 @@ export const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-3">
                 <Mail className="h-5 w-5 text-black" />
-                <a href="mailto:kontakt@mieteinander.de" className="text-black hover:underline">
-                  kontakt@mieteinander.de
+                <a href="mailto:info@mieteinander-wohnen.de" className="text-black hover:underline">
+                  info@mieteinander-wohnen.de
                 </a>
               </div>
               

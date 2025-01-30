@@ -12,8 +12,8 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-900">Kontakt</h3>
             <div className="flex items-center space-x-2">
               <Mail className="h-5 w-5 text-gray-600" />
-              <a href="mailto:kontakt@mieteinander.de" className="text-gray-600 hover:text-gray-900">
-                kontakt@mieteinander.de
+              <a href="mailto:info@mieteinander-wohnen.de" className="text-gray-600 hover:text-gray-900">
+                info@mieteinander-wohnen.de
               </a>
             </div>
           </div>
