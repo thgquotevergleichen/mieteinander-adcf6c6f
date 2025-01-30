@@ -101,7 +101,13 @@ export const PlatformSection = () => {
 
             <div>
               <Button variant="outline" className="mt-6 bg-primary text-white hover:bg-primary/90">
-                Du hast einen Interessenten für ein Erstgespräch? <ArrowRight className="ml-2 h-4 w-4" />
+                <span className="md:hidden">
+                  Du hast einen Interessenten<br />für ein Erstgespräch?
+                </span>
+                <span className="hidden md:inline">
+                  Du hast einen Interessenten für ein Erstgespräch?
+                </span>
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
