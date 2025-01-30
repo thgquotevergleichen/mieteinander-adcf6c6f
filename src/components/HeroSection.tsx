@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <div className="max-w-3xl mx-auto text-center space-y-8">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -18,3 +18,5 @@ export const HeroSection = () => {
     </div>
   );
 };
+
+export default HeroSection;
