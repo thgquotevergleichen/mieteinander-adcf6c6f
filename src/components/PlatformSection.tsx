@@ -42,7 +42,7 @@ export const PlatformSection = () => {
     <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-primary">
+          <h2 className="text-4xl font-bold mb-6 text-primary [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             Digitale Plattform für effizientes Managen von Mietverhältnissen
           </h2>
           <p className="text-xl text-secondary/80">

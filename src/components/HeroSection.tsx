@@ -17,11 +17,11 @@ export const HeroSection = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <div className="text-4xl md:text-7xl font-bold text-secondary [hyphens:none] [-webkit-hyphens:none]">
+          <h1 className="text-4xl md:text-7xl font-bold text-secondary [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             <span className="inline-block">Harmonische</span>{' '}
             <span className="inline-block">Mietverhältnisse</span>{' '}
             <span className="inline-block">schaffen</span>
-          </div>
+          </h1>
           
           <AnimatedText delay={200} className="text-lg md:text-2xl text-secondary/80">
             Unsere Mieteinander-Berater entwickeln innovative Lösungen, die Mieter und Vermieter zusammenbringen und Win-Win-Situationen ermöglichen.

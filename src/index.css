@@ -92,13 +92,7 @@
     @apply bg-background text-foreground;
   }
 
-  /* Enable hyphenation on mobile devices */
-  @media (max-width: 768px) {
-    * {
-      hyphens: auto;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      word-break: break-word;
-    }
+  h1, h2, h3, h4, h5, h6 {
+    @apply [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal;
   }
 }
