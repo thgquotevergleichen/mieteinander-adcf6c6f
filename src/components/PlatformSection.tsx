@@ -1,6 +1,5 @@
-import { Monitor, Users, FileSpreadsheet, ArrowRight, CheckCircle2, ClipboardList, Building2, User } from "lucide-react";
+import { Monitor, Users, FileSpreadsheet, CheckCircle2, ClipboardList, Building2, User } from "lucide-react";
 import { Card } from "./ui/card";
-import { Button } from "./ui/button";
 
 export const PlatformSection = () => {
   const features = [
@@ -97,12 +96,6 @@ export const PlatformSection = () => {
                 </p>
                 <p className="text-gray-600">Los geht's mit der Optimierung!</p>
               </div>
-            </div>
-
-            <div>
-              <Button variant="outline" className="mt-6 bg-primary text-white hover:bg-primary/90">
-                Du hast einen Interessenten für ein Erstgespräch? <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
             </div>
           </div>
         </div>
