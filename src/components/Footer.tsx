@@ -7,17 +7,6 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-gradient-to-b from-[#F5F5F7] to-white border-t-2 border-gray-100 shadow-inner">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        {/* Logo Section */}
-        <div className="flex justify-center mb-12">
-          <Link to="/">
-            <img 
-              src="/lovable-uploads/d0fd6e44-1a60-4d94-ab4a-7b01861ccf9d.png" 
-              alt="Mieteinander Logo" 
-              className="h-16"
-            />
-          </Link>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">Kontakt</h3>
