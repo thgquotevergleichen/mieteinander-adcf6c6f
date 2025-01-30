@@ -44,7 +44,7 @@ const Vermieter = () => {
       
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto text-center">
-          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             Nachhaltige Immobilienoptimierung mit Weitblick
           </AnimatedText>
           <p className="text-lg text-secondary max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ const Vermieter = () => {
 
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          <h2 className="text-3xl font-bold text-primary text-center mb-12 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             Unsere Leistungen für Vermieter
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -65,7 +65,7 @@ const Vermieter = () => {
                 className="transform hover:scale-105 transition-duration-300"
               >
                 <benefit.icon className="w-12 h-12 text-primary mb-4" />
-                <h3 className="text-xl font-semibold text-primary mb-3">
+                <h3 className="text-xl font-semibold text-primary mb-3 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
                   {benefit.title}
                 </h3>
                 <p className="text-secondary">
@@ -79,7 +79,7 @@ const Vermieter = () => {
 
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">
+          <h2 className="text-3xl font-bold text-primary text-center mb-12 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             Unser Optimierungsansatz
           </h2>
           <GlassCard className="p-8">
@@ -106,7 +106,7 @@ const Vermieter = () => {
 
       <section className="py-16 px-4 bg-gradient-to-b from-white to-primary/5">
         <div className="container mx-auto text-center max-w-3xl">
-          <h2 className="text-3xl font-bold text-primary mb-6">
+          <h2 className="text-3xl font-bold text-primary mb-6 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
             Interesse an einer Zusammenarbeit?
           </h2>
           <p className="text-lg text-secondary mb-8">
