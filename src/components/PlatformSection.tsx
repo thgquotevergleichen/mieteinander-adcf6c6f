@@ -1,4 +1,4 @@
-import { Monitor, Users, FileSpreadsheet, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Monitor, Users, FileSpreadsheet, ArrowRight, CheckCircle2, ClipboardList, Building2, User } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 
@@ -18,6 +18,24 @@ export const PlatformSection = () => {
       icon: FileSpreadsheet,
       title: "Automatisierte Abrechnung",
       description: "Effiziente Verwaltung und transparente Dokumentation aller Prozesse"
+    }
+  ];
+
+  const stats = [
+    {
+      icon: ClipboardList,
+      value: "7",
+      label: "offene Aufgaben"
+    },
+    {
+      icon: Building2,
+      value: "4",
+      label: "zugewiesene Objekte"
+    },
+    {
+      icon: User,
+      value: "3",
+      label: "zugewiesene Mieter"
     }
   ];
 
@@ -45,33 +63,46 @@ export const PlatformSection = () => {
           ))}
         </div>
 
-        <div className="bg-primary rounded-3xl p-8 md:p-12 text-white">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold">Prozessoptimierung leicht gemacht</h3>
-              <ul className="space-y-4">
-                {[
-                  "Zentrale Verwaltung aller Dokumente",
-                  "Automatisierte Benachrichtigungen",
-                  "Echtzeit-Statusverfolgung",
-                  "Integrierte Kommunikationstools"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-400 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button variant="outline" className="mt-6 bg-white text-primary hover:bg-white/90">
-                Mehr erfahren <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold mb-6">Willkommen im Mieteinander-Portal</h3>
+              <p className="text-lg text-gray-600 mb-8">Du hast aktuell...</p>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-tr from-blue-600 to-purple-600 opacity-90 animate-float">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Monitor className="h-24 w-24 text-white" />
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {stats.map((stat, index) => (
+                <div key={index} className="flex items-center space-x-4 bg-gray-50 p-6 rounded-xl">
+                  <div className="bg-white p-3 rounded-lg shadow-sm">
+                    <stat.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-gray-600">{stat.label}</div>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            <div className="space-y-4">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-gray-700">
+                  Gratulation 🎉 Ein neues Objekt wurde dir zugewiesen: Dresden
+                </p>
+                <p className="text-gray-600">Los geht's mit der Optimierung!</p>
               </div>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-gray-700">
+                  Gratulation 🎉 Ein neues Objekt wurde dir zugewiesen: München
+                </p>
+                <p className="text-gray-600">Los geht's mit der Optimierung!</p>
+              </div>
+            </div>
+
+            <div>
+              <Button variant="outline" className="mt-6 bg-primary text-white hover:bg-primary/90">
+                Du hast einen Interessenten für ein Erstgespräch? <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
