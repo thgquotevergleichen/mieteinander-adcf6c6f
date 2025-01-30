@@ -13,9 +13,9 @@ export const Testimonials = () => {
       role: "Mieterin",
     },
     {
-      quote: "Ein System, das wirklich alle Interessen berücksichtigt.",
-      author: "Thomas M.",
-      role: "Hausverwalter",
+      quote: "Als Mieteinander-Berater kann ich aktiv dazu beitragen, dass Mieter und Vermieter harmonisch zusammenfinden.",
+      author: "Andreas B.",
+      role: "Mieteinander-Berater",
     },
   ];
 

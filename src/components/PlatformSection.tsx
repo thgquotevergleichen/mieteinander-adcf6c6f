@@ -7,12 +7,12 @@ export const PlatformSection = () => {
     {
       icon: Monitor,
       title: "Digitale Prozessbegleitung",
-      description: "Von der Mandatsübernahme bis zur Abrechnung - alles in einer Plattform"
+      description: "Ihr Mieteinander-Berater begleitet Sie von der Mandatsübernahme bis zur Abrechnung"
     },
     {
       icon: Users,
       title: "Mietermanagement",
-      description: "Professionelle Verwaltung aller Mietergespräche und Kommunikation"
+      description: "Professionelle Verwaltung aller Mietergespräche durch erfahrene Mieteinander-Berater"
     },
     {
       icon: FileSpreadsheet,
@@ -47,7 +47,7 @@ export const PlatformSection = () => {
             Digitale Plattform für effizientes Immobilienmanagement
           </h2>
           <p className="text-xl text-secondary/80">
-            Eine innovative Lösung, die den gesamten Verwaltungsprozess optimiert und digitalisiert
+            Unsere Mieteinander-Berater nutzen innovative Lösungen, um den gesamten Verwaltungsprozess zu optimieren
           </p>
         </div>
 
