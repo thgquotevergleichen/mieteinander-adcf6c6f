@@ -8,6 +8,7 @@ import Mieter from "./pages/Mieter";
 import Vermieter from "./pages/Vermieter";
 import Hausverwalter from "./pages/Hausverwalter";
 import Impressum from "./pages/Impressum";
+import Kontakt from "./pages/Kontakt";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/vermieter" element={<Vermieter />} />
           <Route path="/hausverwalter" element={<Hausverwalter />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/kontakt" element={<Kontakt />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

@@ -1,0 +1,93 @@
+import { NavBar } from "@/components/NavBar";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
+
+const Kontakt = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically send the form data to a backend
+    console.log("Form submitted:", formData);
+    toast({
+      title: "Nachricht gesendet",
+      description: "Vielen Dank für Ihre Nachricht. Wir werden uns bald bei Ihnen melden.",
+    });
+    setFormData({ name: "", email: "", message: "" });
+  };
+
+  return (
+    <div className="min-h-screen bg-[#F5F5F7]">
+      <NavBar />
+      <div className="container mx-auto px-4 pt-32 pb-20">
+        <div className="max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-center mb-8">Kontaktieren Sie uns</h1>
+          <p className="text-center text-gray-600 mb-12">
+            Haben Sie Fragen oder Anliegen? Wir sind für Sie da und helfen Ihnen gerne weiter.
+          </p>
+          
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                Name
+              </label>
+              <Input
+                id="name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+                className="w-full"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                E-Mail
+              </label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+                className="w-full"
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                Nachricht
+              </label>
+              <Textarea
+                id="message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                required
+                className="w-full min-h-[150px]"
+              />
+            </div>
+            
+            <Button
+              type="submit"
+              className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg rounded-full transition-all duration-300"
+            >
+              Nachricht senden
+            </Button>
+          </form>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default Kontakt;
