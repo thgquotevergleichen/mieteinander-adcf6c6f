@@ -1,6 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
-import { Shield, Users, Handshake, Heart, Building, MessageCircle } from "lucide-react";
+import { Shield, Users, Handshake, Heart, Building } from "lucide-react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { AnimatedText } from "@/components/ui/AnimatedText";
 
@@ -30,11 +30,6 @@ const Vermieter = () => {
       icon: Building,
       title: "Wertsteigerung",
       description: "Durch optimierte Mietverhältnisse steigern wir nachhaltig den Wert Ihrer Immobilie.",
-    },
-    {
-      icon: MessageCircle,
-      title: "Mediationsansatz",
-      description: "Bei Konflikten vermitteln wir neutral zwischen allen Parteien und finden gemeinsame Lösungen.",
     },
   ];
 
@@ -93,7 +88,7 @@ const Vermieter = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Users className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <span>Verbesserung der Mieter-Vermieter-Kommunikation durch professionelle Mediation</span>
+                <span>Verbesserung der Mieter-Vermieter-Kommunikation</span>
               </li>
               <li className="flex items-start gap-3">
                 <Building className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
