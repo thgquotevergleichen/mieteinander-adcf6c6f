@@ -39,7 +39,7 @@ const Vermieter = () => {
       
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto text-center">
-          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6 [hyphens:manual] md:[hyphens:auto] [-webkit-hyphens:manual] md:[-webkit-hyphens:auto] whitespace-normal md:whitespace-normal">
+          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6 px-2 break-words hyphens-auto">
             Nachhaltige Immobilienoptimierung mit Weitblick
           </AnimatedText>
           <p className="text-lg text-secondary max-w-2xl mx-auto">

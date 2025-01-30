@@ -44,7 +44,7 @@ const Hausverwalter = () => {
       
       <section className="pt-32 pb-16 px-4">
         <div className="container mx-auto text-center">
-          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <AnimatedText className="text-4xl md:text-5xl font-bold text-primary mb-6 px-2 break-words hyphens-auto">
             Ihr digitaler Partner für effiziente Immobilienoptimierung
           </AnimatedText>
           <p className="text-lg text-secondary max-w-2xl mx-auto">
