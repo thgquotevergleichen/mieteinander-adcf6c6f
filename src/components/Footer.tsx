@@ -64,7 +64,7 @@ export const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-center text-gray-500">
-            © {currentYear} mieteinander. Alle Rechte vorbehalten.
+            © 2025 mieteinander GmbH. Alle Rechte vorbehalten.
           </p>
         </div>
       </div>
