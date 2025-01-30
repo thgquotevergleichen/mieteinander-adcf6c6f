@@ -29,10 +29,10 @@ export const HeroSection = () => {
           </AnimatedText>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Link to="/kontakt">
+            <Link to="/kontakt" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
               >
                 Kontakt
               </Button>
@@ -40,7 +40,7 @@ export const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg rounded-full transition-all duration-300"
+              className="w-full sm:w-auto border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg rounded-full transition-all duration-300"
               onClick={scrollToTrust}
             >
               Mehr erfahren
@@ -57,7 +57,7 @@ export const HeroSection = () => {
             <h3 className="text-lg md:text-xl font-semibold mb-2">Konflikte vermeiden</h3>
             <p className="text-secondary/70">Professionelle Mediation und klare Vereinbarungen</p>
           </GlassCard>
-          <GlassCard className="animate-float [animation-delay:400ms]">
+          <GlassCard className="animate-float [animation-delay:400ms] mb-8 md:mb-0">
             <h3 className="text-lg md:text-xl font-semibold mb-2">Werte schaffen</h3>
             <p className="text-secondary/70">Nachhaltige Lösungen für langfristige Zufriedenheit</p>
           </GlassCard>
