@@ -1,25 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Input } from "./ui/input";
 import { toast } from "sonner";
-import { useNavigate } from "react-router-dom";
 
 export const PasswordProtection = ({ children }: { children: React.ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const auth = localStorage.getItem("isAuthenticated");
-    if (auth === "true") {
-      setIsAuthenticated(true);
-    }
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password.toLowerCase() === "renditeoptimierer") {
       setIsAuthenticated(true);
-      localStorage.setItem("isAuthenticated", "true");
       toast.success("Zugang gewährt");
     } else {
       toast.error("Falsches Passwort");
@@ -27,25 +17,8 @@ export const PasswordProtection = ({ children }: { children: React.ReactNode }) 
     }
   };
 
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-    localStorage.removeItem("isAuthenticated");
-    navigate("/");
-    toast.success("Erfolgreich abgemeldet");
-  };
-
   if (isAuthenticated) {
-    return (
-      <div>
-        {children}
-        <button
-          onClick={handleLogout}
-          className="fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
-        >
-          Abmelden
-        </button>
-      </div>
-    );
+    return <>{children}</>;
   }
 
   return (
