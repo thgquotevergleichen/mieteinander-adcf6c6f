@@ -64,9 +64,14 @@ export const PlatformSection = () => {
 
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
           <div className="space-y-8">
-            <div className="text-center mb-8 p-4 bg-primary/5 rounded-lg">
-              <p className="text-primary/80 font-medium">Mieteinander-Berater Portal</p>
-              <p className="text-sm text-secondary/70">Interne Plattform für Mieteinander-Berater</p>
+            <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-purple-50 to-blue-50 p-8 border border-purple-100/50">
+              <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-purple-50 opacity-20 blur-2xl"></div>
+              <div className="relative">
+                <div className="inline-block rounded-lg bg-white/90 px-4 py-2 shadow-sm backdrop-blur-sm">
+                  <p className="font-medium text-primary">Einblick ins Mieteinander-Berater Portal</p>
+                </div>
+                <p className="mt-2 text-sm text-secondary/70">Hier sehen Sie die interne Plattform, auf der unsere Berater täglich arbeiten</p>
+              </div>
             </div>
             
             <div>
@@ -76,7 +81,7 @@ export const PlatformSection = () => {
             
             <div className="grid md:grid-cols-3 gap-8">
               {stats.map((stat, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-gray-50 p-6 rounded-xl">
+                <div key={index} className="flex items-center space-x-4 bg-gray-50 p-6 rounded-xl hover:shadow-md transition-all duration-300">
                   <div className="bg-white p-3 rounded-lg shadow-sm">
                     <stat.icon className="h-6 w-6 text-primary" />
                   </div>
