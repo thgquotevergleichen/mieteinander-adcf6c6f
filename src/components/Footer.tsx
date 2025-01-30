@@ -15,7 +15,7 @@ export const Footer = () => {
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div className="space-y-4">
+          <div className="space-y-4 p-6 md:p-0 bg-white/50 rounded-lg shadow-sm md:shadow-none md:bg-transparent">
             <h3 className="text-lg font-semibold text-gray-900">Kontakt</h3>
             <div className="flex items-center justify-center md:justify-start space-x-2">
               <Mail className="h-5 w-5 text-gray-600" />
@@ -25,7 +25,7 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 p-6 md:p-0 bg-white/50 rounded-lg shadow-sm md:shadow-none md:bg-transparent">
             <h3 className="text-lg font-semibold text-gray-900">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
@@ -46,7 +46,7 @@ export const Footer = () => {
             </ul>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 p-6 md:p-0 bg-white/50 rounded-lg shadow-sm md:shadow-none md:bg-transparent">
             <h3 className="text-lg font-semibold text-gray-900">Standort</h3>
             <div className="space-y-2">
               <div className="flex items-center justify-center md:justify-start space-x-2">
