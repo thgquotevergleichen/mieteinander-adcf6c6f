@@ -22,8 +22,8 @@ const Impressum = () => {
           <div>
             <h2 className="font-bold mb-2">Registereintragung</h2>
             <p>
-              Handelsregister: [HRB-Nummer wird nach Vollendung der Gründung an dieser Stelle veröffentlicht]<br />
-              Registergericht: [zuständiges Amtsgericht wird nach Vollendung der Gründung an dieser Stelle veröffentlicht]
+              Handelsregister: HRB 22723<br />
+              Registergericht: Handelsregister B des Amtsgerichts Stralsund
             </p>
           </div>
 
