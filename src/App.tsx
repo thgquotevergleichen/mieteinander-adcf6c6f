@@ -8,7 +8,6 @@ import Mieter from "./pages/Mieter";
 import Vermieter from "./pages/Vermieter";
 import Hausverwalter from "./pages/Hausverwalter";
 import Impressum from "./pages/Impressum";
-import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +17,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/mieter" element={<Mieter />} />
