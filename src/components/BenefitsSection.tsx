@@ -7,7 +7,7 @@ export const BenefitsSection = () => {
     {
       title: "Für Vermieter",
       features: [
-        "Zuverlässige Mieter finden",
+        "Win-Win Mietverhältnisse",
         "Wertsteigerung der Immobilie",
         "Reduzierter Verwaltungsaufwand",
         "Langfristige Mietverhältnisse",
