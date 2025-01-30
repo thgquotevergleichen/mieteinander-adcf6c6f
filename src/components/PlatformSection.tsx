@@ -43,7 +43,7 @@ export const PlatformSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-primary">
-            Digitale Plattform für effizientes Immobilienmanagement
+            Digitale Plattform für effizientes Managen von Mietverhältnissen
           </h2>
           <p className="text-xl text-secondary/80">
             Unsere Mieteinander-Berater nutzen innovative Lösungen, um den gesamten Verwaltungsprozess zu optimieren
