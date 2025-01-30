@@ -3,13 +3,15 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 const Kontakt = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,15 +19,32 @@ const Kontakt = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Nachricht gesendet",
-      description: "Vielen Dank für Ihre Nachricht. Wir werden uns bald bei Ihnen melden.",
-    });
-    setFormData({ name: "", email: "", role: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([formData]);
+
+      if (error) throw error;
+
+      toast({
+        title: "Nachricht gesendet",
+        description: "Vielen Dank für Ihre Nachricht. Wir werden uns bald bei Ihnen melden.",
+      });
+      setFormData({ name: "", email: "", role: "", message: "" });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Fehler",
+        description: "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -110,9 +129,10 @@ const Kontakt = () => {
             
             <Button
               type="submit"
+              disabled={isSubmitting}
               className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg rounded-full transition-all duration-300"
             >
-              Nachricht senden
+              {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
             </Button>
           </form>
         </div>
