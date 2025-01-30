@@ -28,7 +28,7 @@ export const HowItWorks = () => {
   return (
     <section className="py-20 px-4 bg-primary text-accent">
       <div className="container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
           So funktioniert's
         </h2>
 
@@ -36,10 +36,10 @@ export const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
               <div className="space-y-4 text-center">
-                <span className="block text-secondary text-6xl font-bold">
+                <span className="block text-5xl md:text-6xl font-bold text-secondary">
                   {step.number}
                 </span>
-                <h3 className="text-2xl font-semibold">{step.title}</h3>
+                <h3 className="text-xl md:text-2xl font-semibold">{step.title}</h3>
                 <p className="text-accent/70">{step.description}</p>
               </div>
               

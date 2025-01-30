@@ -17,14 +17,14 @@ export const HeroSection = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <div className="text-5xl md:text-7xl font-bold text-secondary">
+          <div className="text-4xl md:text-7xl font-bold text-secondary">
             <span className="block md:inline">Harmonische</span>{' '}
             <span className="block md:inline">Mietver-</span>
             <span className="block md:inline">hältnisse</span>{' '}
             <span className="block md:inline">schaffen</span>
           </div>
           
-          <AnimatedText delay={200} className="text-xl md:text-2xl text-secondary/80">
+          <AnimatedText delay={200} className="text-lg md:text-2xl text-secondary/80">
             Unsere Mieteinander-Berater entwickeln innovative Lösungen, die Mieter und Vermieter zusammenbringen und Win-Win-Situationen ermöglichen.
           </AnimatedText>
 
@@ -50,15 +50,15 @@ export const HeroSection = () => {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <GlassCard id="trust-box" className="animate-float">
-            <h3 className="text-xl font-semibold mb-2">Vertrauen aufbauen</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-2">Vertrauen aufbauen</h3>
             <p className="text-secondary/70">Ihr Mieteinander-Berater sorgt für transparente Kommunikation und faire Bedingungen</p>
           </GlassCard>
           <GlassCard className="animate-float [animation-delay:200ms]">
-            <h3 className="text-xl font-semibold mb-2">Konflikte vermeiden</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-2">Konflikte vermeiden</h3>
             <p className="text-secondary/70">Professionelle Mediation und klare Vereinbarungen</p>
           </GlassCard>
           <GlassCard className="animate-float [animation-delay:400ms]">
-            <h3 className="text-xl font-semibold mb-2">Werte schaffen</h3>
+            <h3 className="text-lg md:text-xl font-semibold mb-2">Werte schaffen</h3>
             <p className="text-secondary/70">Nachhaltige Lösungen für langfristige Zufriedenheit</p>
           </GlassCard>
         </div>

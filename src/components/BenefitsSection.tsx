@@ -27,7 +27,7 @@ export const BenefitsSection = () => {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-white to-primary/5">
       <div className="container mx-auto">
-        <AnimatedText className="text-4xl md:text-5xl font-bold text-center text-secondary mb-16">
+        <AnimatedText className="text-3xl md:text-5xl font-bold text-center text-secondary mb-16">
           Vorteile für alle Beteiligten
         </AnimatedText>
 
@@ -37,7 +37,7 @@ export const BenefitsSection = () => {
               key={benefit.title}
               className="transform hover:scale-105 transition-transform duration-300"
             >
-              <h3 className="text-2xl font-semibold mb-6 text-secondary">
+              <h3 className="text-xl md:text-2xl font-semibold mb-6 text-secondary">
                 {benefit.title}
               </h3>
               <ul className="space-y-4">

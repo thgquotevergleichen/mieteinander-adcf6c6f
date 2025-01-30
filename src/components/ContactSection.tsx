@@ -6,13 +6,13 @@ export const ContactSection = () => {
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto">
-        <AnimatedText className="text-4xl md:text-5xl font-bold text-center text-black mb-16">
+        <AnimatedText className="text-3xl md:text-5xl font-bold text-center text-black mb-16">
           Fragen oder Anliegen?
         </AnimatedText>
         
         <div className="max-w-2xl mx-auto">
           <GlassCard className="text-center">
-            <p className="text-xl text-black/80 mb-8">
+            <p className="text-lg md:text-xl text-black/80 mb-8">
               Wir sind für Sie da und beantworten gerne Ihre Fragen rund um harmonische Mietverhältnisse.
             </p>
             
